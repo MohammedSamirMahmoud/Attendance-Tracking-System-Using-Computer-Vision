@@ -3,7 +3,6 @@ from datetime import datetime
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Create your models here.
 
 
@@ -35,7 +34,7 @@ class Activity(models.Model):
 
 def content_file_name(instance, filename):
     filename, ext = filename.split('.')
-    file_path = base + '/media/photos/' + '{name}/user_{user_id}.{filename}.{ext}'.format(
+    file_path = 'photos/' + '{name}/user_{user_id}.{filename}.{ext}'.format(
         name=instance.Employee.name, user_id=instance.Employee.id, filename=filename, ext=ext)
     return file_path
 
@@ -49,7 +48,7 @@ class Picture(models.Model):
 
 def test_content_file_name(instance, filename):
     filename, ext = filename.split('.')
-    file_path = base + '/media/testing/' + '{filename}.{ext}'.format( filename=filename, ext=ext)
+    file_path = 'testing/' + '{filename}.{ext}'.format( filename=filename, ext=ext)
     return file_path
 
  
