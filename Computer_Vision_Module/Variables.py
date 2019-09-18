@@ -9,3 +9,6 @@ EMBEDDINGS_PATH = os.getcwd()
 
 # EMPLOYEES PATH
 EMPLOYEES_NAMES = os.getcwd()
+
+# SVM Model Path
+SVM_MODEL_PATH = os.getcwd()
