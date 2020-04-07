@@ -1,4 +1,7 @@
 # Attendance-Tracking-System-Using-Computer-Vision
+
+![Alt Text](https://www.olloltd.com/images/2020/02/sssss.gif)
+
 ## Introduction:
 Tracking Systems nowadays are in high demand starting from the very basic attendance systems to most critical security systems. With the powerful rise of AI & Computer Vision. These Tracking Systems have become more accurate & more precise resulting in more reliability and stability. 
 Our Project is basically Leveraging The power of Image & Video Detection, Recognition & Tracking. 
